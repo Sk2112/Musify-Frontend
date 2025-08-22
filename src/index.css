@@ -3,3 +3,16 @@
 body {
   margin: 0;
 }
+
+@keyframes sway {
+  0%, 100% { transform: translateX(0); }
+  50% { transform: translateX(10px); }
+}
+
+.animate-sway {
+  animation: sway 3s ease-in-out infinite;
+}
+.animate-sway-icon {
+  animation: sway 1s ease-in-out infinite;
+}
+
