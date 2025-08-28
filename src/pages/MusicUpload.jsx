@@ -34,11 +34,11 @@ const handleSubmit = async (e) => {
     setLoading(true);
 
     const formData = new FormData();
-    formData.append("title", songName); // backend expects @RequestPart("title")
-    formData.append("file", file);      // backend expects @RequestPart("file")
+    formData.append("title", songName); 
+    formData.append("file", file);      
 
     const response = await axios.post(
-      "http://localhost:8080/api/music/upload",
+      "https://musify-backend-efze.onrender.com/api/music/upload",
       formData,
       {
         headers: {

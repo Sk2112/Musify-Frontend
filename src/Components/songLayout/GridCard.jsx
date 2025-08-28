@@ -19,7 +19,7 @@
     useEffect(() => {
       const fetchSongs = async () => {
         try {
-          const res = await axios.get("http://localhost:8080/api/music/all");
+          const res = await axios.get("https://musify-backend-efze.onrender.com/api/music/all");
           setSongs(res.data);
         } catch (err) {
           console.error("Error fetching songs:", err);
