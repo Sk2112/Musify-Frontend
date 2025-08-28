@@ -94,7 +94,7 @@ const words = [
   </SignedOut>
 
            <div className='rounded-full px-5 py-1 text-gray-900 font-semibold flex items-center w-max '>
-    <button className='cursor-pointer '>CONTACT DEV</button>
+    <a href="/contact">CONTACT DEV</a>
   </div>
 
 </div>
