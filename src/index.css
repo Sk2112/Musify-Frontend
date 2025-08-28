@@ -1,0 +1,36 @@
+@import "tailwindcss";
+
+body {
+  margin: 0;
+}
+
+@keyframes sway {
+  0%, 100% { transform: translateX(0); }
+  50% { transform: translateX(10px); }
+}
+
+.animate-sway {
+  animation: sway 3s ease-in-out infinite;
+}
+.animate-sway-icon {
+  animation: sway 1s ease-in-out infinite;
+}
+
+.scrollbar-hide {
+  -ms-overflow-style: none;  
+  scrollbar-width: none;  
+}
+.scrollbar-hide::-webkit-scrollbar {
+  display: none; 
+}
+
+
+input[type="range"] {
+  @apply appearance-none h-3 rounded-lg bg-gray-300;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+  @apply appearance-none w-6 h-3 rounded-full bg-blue-500 cursor-pointer;
+}
+
+
