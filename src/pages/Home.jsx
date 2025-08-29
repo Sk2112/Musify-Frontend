@@ -7,7 +7,7 @@ import MusicIcon2 from "../assets/Images/Music-Icon2.png";
 import MusicIcon3 from "../assets/Images/Music-Icon3.png";
 import Headphone from "../assets/Images/Headphone.png";
 import { TypewriterEffectSmooth } from "../Components/TypeWriter";
-import { SignedIn, SignedOut, UserButton } from "@clerk/clerk-react";
+import { SignedIn, SignedOut, SignInButton, UserButton } from "@clerk/clerk-react";
 
 const Home = () => {
 
@@ -89,7 +89,14 @@ const words = [
   <SignedOut>
 
            <div className='bg-[#436ba3] rounded-full px-5 py-1  text-white flex items-center hover:bg-white hover:text-blue-500 w-max transition-colors duration-300 ease-in-out'>
-    <button className='cursor-pointer font-serif'>SIGN IN</button>
+            <SignedOut>
+    <button className='cursor-pointer font-serif'>
+      <SignInButton/>
+    </button>
+            </SignedOut>
+            <SignedIn>
+              <UserButton/>
+            </SignedIn>
   </div>
   </SignedOut>
 
