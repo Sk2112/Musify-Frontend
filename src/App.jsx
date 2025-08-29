@@ -5,10 +5,12 @@ import MusicStreaming from './pages/MusicStreaming'
 import MusicUpload from './pages/MusicUpload'
 import { Toaster } from 'react-hot-toast'
 import Contact from './pages/Contact'
+import { Analytics } from '@vercel/analytics/react'
 
 const App = () => {
   return (
     <>
+    <Analytics/>
     <Toaster/>
     <Routes>
 
